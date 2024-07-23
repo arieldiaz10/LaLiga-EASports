@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaLiga EA Sports</title>
+    <!--Enlace a las fuentes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!--Enlace a los icónos de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Enlace a las hojas de estilo utilizadas en cada dispositivo-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Encabezado de página-->
+    <header>
+        <div class="logo">LaLiga EA Sports</div>
+        <!--Menú que se desplegará en moviles y tablets-->
+        <div class="menu-desplegable">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!--Menú principal-->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#contenedor-equipos">Equipos</a></li>
+                <li><a href="#">Resultados</a></li>
+                <li><a href="#contenedor-noticias">Noticias</a></li>
+                <li><a href="#contenedor-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!--Contenedor principal-->
+    <main>
+        <!--Sección equipos-->
+        <article id="contenedor-inicio">
+            <h1>No es <span>fútbol</span>. <br>Es <span>LaLiga</span></h1>
+        </article>
+
+        <!--Sección equipos-->
+        <article id="contenedor-equipos">
+            <h3>Equipos con más títulos en la historia</h3>
+            <div id="equipos">
+                <div>
+                    <h4>Real Madrid</h4>
+                    <img src="img/real_madrid.png" alt="Real Madrid">
+                    <p><span>Ligas ganadas: </span>36 <i class="fa-solid fa-trophy"></i></p>
+                </div>
+
+                <div>
+                    <h4>F.C Barcelona</h4>
+                    <img src="img/barcelona.png" alt="Barcelona">
+                    <p><span>Ligas ganadas: </span>27 <i class="fa-solid fa-trophy"></i></p>
+                </div>
+                
+                <div>
+                    <h4>Atlético de Madrid</h4>
+                    <img src="img/atletico_madrid.png" alt="Atlético de Madrid">
+                    <p><span>Ligas ganadas: </span>11 <i class="fa-solid fa-trophy"></i></p>
+                </div>
+
+                <div>
+                    <h4>Athletic Club</h4>
+                    <img src="img/athletic_bilbao.png" alt="Athletic de Bilbao">
+                    <p><span>Ligas ganadas: </span>8 <i class="fa-solid fa-trophy"></i></p>
+                </div>
+
+                <div>
+                    <h4>Valencia</h4>
+                    <img src="img/valencia.png" alt="Valencia">
+                    <p><span>Ligas ganadas: </span>6 <i class="fa-solid fa-trophy"></i></p>
+                </div>
+
+                <div>
+                    <h4>Real Sociedad</h4>
+                    <img src="img/real_sociedad.png" alt="Real Sociedad">
+                    <p><span>Ligas ganadas: </span>2 <i class="fa-solid fa-trophy"></i></p>
+                </div>
+            </div>
+        </article>
+        
+        <!--Sección noticias: video de youtube-->
+        <article id ="contenedor-noticias">
+            <h3>
+                Noticias <i class="fa-solid fa-newspaper"></i>
+            </h3>
+            <p>Entérate de las últimas novedades en nuestro boletín informativo</p>
+            <div>
+                <iframe class="reproductor-video" src="https://www.youtube.com/embed/DQgL8xZaMwU?si=lbJ8vDFMs78L359a&autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="reproductor-video" src="https://www.youtube.com/embed/EmZl2n_ApI4?si=5zho4nRTxy3ytZy-&autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="reproductor-video" src="https://www.youtube.com/embed/pwRTym629PM?si=zPSr_B30jY7Gn5DO&autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="reproductor-video" src="https://www.youtube.com/embed/dU9GD9uOYnU?si=v7MHea0D-0LVLWLU&autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+        </article>
+        
+    </main>
+
+    <!--Pie de página-->
+    <footer id="contenedor-contacto">
+        <div class="info-desarrollador">
+            <h4>Desarrollado por: Ariel Ernesto Díaz Carpio <i class="fa-solid fa-code"></i></h4>
+        </div>
+
+        <div class="info-contacto">
+            <h4>Siguenos en nuestras redes sociales</h4>
+            <div class="redes-sociales">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <!--Script para el funcionamiento del menú desplegable-->
+    <script>
+       menuDesplegable = document.querySelector(".menu-desplegable");
+       menuDesplegable.onclick = function(){
+          navBar = document.querySelector(".nav-bar");
+          navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

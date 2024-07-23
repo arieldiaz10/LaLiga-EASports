@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Estilos de la etiqueta header*/
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ff4c44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 700;
+    color: #fefefe;
+}
+
+.menu-desplegable {
+    display: none;
+}
+/*Estilos de la etiqueta nav*/
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    font-family: 'Nunito Sans';
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: #ff4c44;
+    background-color: #fefefe;
+}
+
+.nav-bar ul li a.active{
+    color: #ff4c44;
+    background-color: #fefefe;
+}
+
+/*Estilos de la etiqueta main*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h3 {
+    font-family: 'Nunito Sans';
+    font-size: 26px;
+}
+
+main h4 {
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+}
+
+main p, span {
+    font-family: 'Hind Madurai';
+    font-family: 18px;
+}
+
+main p span {
+    font-weight: bold;
+}
+
+/*Estilos específicos de cada sección*/
+/*Sección inicio*/
+#contenedor-inicio {
+    height: 86vh;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contenedor-inicio h1 {
+    color: #ff4c44;
+    font-family: 'Lora';
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+#contenedor-inicio h1 span{
+    font-style: normal;
+    font-weight: 900;
+}
+
+/*Sección equipos*/
+#contenedor-equipos{
+    padding: 10px;
+    background-color: #171718;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#equipos {
+    display: grid;
+    color: #fefefe;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#contenedor-equipos h3{
+    color: #d3d3d3;
+}
+
+#equipos img {
+    width: 150px;
+    height: auto;
+}
+
+#equipos div {
+    grid-template-columns: auto auto auto;
+}
+
+/*Sección noticias*/
+#contenedor-noticias {
+    padding: 15px;
+    color: #fefefe;
+    background-color: #ff4c44;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedor-noticias div {
+    height: 80%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 20px;
+}
+
+#contenedor-noticias iframe {
+    border-radius: 10px;
+}
+
+.reproductor-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+/*Pie de página*/
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    background-color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-weight: 100;
+    color: #d3d3d3;
+}
+
+
+.info-desarrollador {
+    flex: 1;
+}
+
+.info-desarrollador i {
+    color: #ff4c44;
+}
+
+.info-contacto {
+    flex: 1;
+    border-left: 2px solid #d3d3d3;
+}
+
+.redes-sociales i {
+    font-size: 25px;
+    color: #ff4c44;
+    padding: 8px;
+}
+
+
+
+
+/*Estilos responsive*/
+@media only screen and (max-width: 1320px){
+    header {
+        padding: 0 50px;
+    }   
+}
+
+@media only screen and (max-width: 1100px){
+    header {
+        padding: 0 30px;
+    }   
+}
+
+@media only screen and (max-width: 900px) {
+    .menu-desplegable {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-desplegable .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+    }    
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #ff4c44;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    /*Estilos de la etiqueta main*/
+    h3 {
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    /*Sección equipos*/
+    #equipos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    /*Sección noticias*/
+    #contenedor-noticias {
+        text-align: center;
+    }
+
+    #contenedor-noticias div {
+        padding: 0;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    /*Sección contacto*/
+    #contenedor-contacto {
+        height: 30vh;
+        flex-direction: column;
+    }
+
+    .info-contacto, .info-desarrollador {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .info-contacto {
+        order: 1;
+        border-left: none;
+    }
+
+    .info-desarrollador {
+        order: 2;
+    }
+
+}
+
+
